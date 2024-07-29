@@ -5,7 +5,6 @@ import songModel from '../models/songModel.js';
 // add song
 const addSong = async (req, res) => {
     try {
-
         const name = req.body.name;
         const desc = req.body.desc;
         const album = req.body.album;
@@ -31,8 +30,7 @@ const addSong = async (req, res) => {
         await song.save();
 
         res.json({
-            success: true, message: "Song added"
-        })
+            success: true, message: "Song added" });
 
     }
 
