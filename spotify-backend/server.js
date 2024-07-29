@@ -22,16 +22,16 @@ app.use(cors());
 
 // initializing routes
 
-app.use("/api/song" , songRouter)
+app.use("/api/song", songRouter)
 
 
-app.get('/' ,(req,res) => {
+app.get('/', (req, res) => {
     res.send("API WORKING ON PORT 4000");
 })
 
 
 // listining the requset
 
-app.listen(port ,()=>{
+app.listen(port, () => {
     console.log(`Server Started on port ${port}`);
 })
